@@ -1,0 +1,166 @@
+@font-face {
+    src: url('../fonts/NunitoSans-Regular.ttf');
+    font-family: "Nunito Sans";
+}
+@font-face {
+    src: url('../fonts/YesevaOne-Regular.ttf');
+    font-family: "Yeseva One";
+}
+@font-face {
+    src: url('../fonts/NunitoSans-Italic.ttf');
+    font-family: "Nunito Sans";
+    font-style: italic;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-size: 18px;
+}
+body * {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.container {
+    max-width: 1292px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+.title {
+    font-family: 'Yeseva One', 'Times New Roman', cursive;
+    color: #e3b873;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+}
+.subtitle {
+    font-family: 'Yeseva One', 'Times New Roman', cursive;
+    color: #181818;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+.content {
+    color: #fff;
+    font-size: 22px;
+    line-height: 36px;
+}
+.completed__container {
+    height: 1098px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    padding: 107px 60px 415px
+}
+.completed {
+    background-color: #131313;
+}
+.completed__title {
+    color: #e3b873;
+    margin-top: 72px;
+    margin-bottom: 34px;
+    width: 253px;
+    letter-spacing: -0.07em;
+}
+.completed__content {
+    font-size: 14px;
+    line-height: 27px;
+    width: 444px;
+}
+.completed-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+}
+.completed-list__item {
+    margin-top: 34px;
+    width: 50%;
+}
+.completed-list__item h3 {
+    color: #e3b873;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 9px;
+}
+.completed-list__item span {
+    color: #fff;
+    font-size: 13px;
+    line-height: 21px;
+}
+.carousel-control {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+}
+.carousel-control button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.carousel-control__next, .carousel-control__prev {
+    width: 42px;
+    height: 14px;
+    margin-right: 21px;
+}
+.carousel-control__next{
+    transform: scale(-1, 1);
+    margin-left: 21px;
+}
+button.carousel-control__indicator {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 9px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.carousel-control__indicator.active {
+    background-color: #fff;
+}
+.carousel-list {
+    display: flex;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 53px;
+}
+.carousel-list__item {
+    margin-right: 60px;
+    white-space: nowrap;
+}
+.carousel-list__item a {
+    color: rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid transparent;
+    transition: 0.2s ease;
+}
+.carousel-list__item.active a, .carousel-list__item:hover a {
+    color: #e3b873;
+    border-bottom-color: #e3b873;
+}
+.completed__img {
+    width: 679px;
+    height: 482px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.completed__img img {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0s 0.3s;
+}
+.completed__img img.active {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
