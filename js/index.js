@@ -33,7 +33,7 @@ function initSlider(options) {
     };
 
     let sliderImage = document.querySelector('.completed__img');
-    let sliderArrows = document.querySelectorAll('.carousel-control__arrow');
+    let sliderArrows = document.querySelectorAll('.carousel-control__arrow, .carousel-control__mob-arrow');
     let sliderIndicators = document.querySelector('.carousel-control');
     let sliderRefs = document.querySelector('.carousel-list');
 

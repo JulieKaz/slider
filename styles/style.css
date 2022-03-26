@@ -164,3 +164,76 @@ button.carousel-control__indicator {
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
 }
+.carousel-control__mob-arrow {
+    display: none;
+}
+@media (max-width: 1300px) {
+    .container {
+        max-width: 375px;
+    }
+    .title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .completed__container {
+        padding: 0 18px 58px;
+        text-align: center;
+        height: auto;
+    }
+    .completed__title {
+        margin: 36px auto 22px;
+        padding: 0 12px;
+    }
+    .completed__content {
+        font-size: 11px;
+        line-height: 17px;
+        padding: 0 18px;
+        width: auto;
+    }
+    .completed-list {
+        width: auto;
+        text-align: left;
+        order: 1;
+    }
+    .completed-list__item h3 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .completed-list__item span {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .completed__img {
+        width: 100%;
+        height: 240px;
+        margin-top: 70px;
+        position: relative;
+    }
+    .completed__img img {
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+    .carousel-control__mob-arrow {
+        width: 36px;
+        height: 36px;
+        border: none;
+        border-radius: 50%;
+        background: #e3b873 url('../img/stroke_left.svg') no-repeat 44% center;
+        position: absolute;
+        top: calc(50% - 18px);
+        left: 14px;
+        cursor: pointer;
+        box-shadow: 0 0 15px rgba(227, 184, 115, 0.5);
+        z-index: 20;
+        display: block;
+    }
+    .carousel-control__mob-arrow.next {
+        right: 14px;
+        transform: scale(-1, 1);
+        left: auto;
+    }
+    .carousel-list, .carousel-control {
+        display: none;
+    }
+}
