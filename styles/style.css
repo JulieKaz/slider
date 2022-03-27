@@ -18,6 +18,7 @@
 body {
     font-family: "Nunito Sans", Arial, sans-serif;
     font-size: 18px;
+    background-color: #131313;
 }
 body * {
     box-sizing: border-box;
@@ -211,7 +212,6 @@ button.carousel-control__indicator {
     }
     .completed__img img {
         width: 100%;
-        position: relative;
         left: 0;
     }
     .carousel-control__mob-arrow {
@@ -227,6 +227,10 @@ button.carousel-control__indicator {
         box-shadow: 0 0 15px rgba(227, 184, 115, 0.5);
         z-index: 20;
         display: block;
+    }
+    .carousel-control__mob-arrow:focus-visible {
+        outline: none;
+        box-shadow: 0 0 10px rgba(140, 108, 70, 0.5);
     }
     .carousel-control__mob-arrow.next {
         right: 14px;

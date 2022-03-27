@@ -33,10 +33,8 @@ function initSlider(options) {
     };
 
     let sliderImage = document.querySelector('.completed__img');
-    let sliderArrows = document.querySelectorAll('.carousel-control__arrow, .carousel-control__mob-arrow');
     let sliderIndicators = document.querySelector('.carousel-control');
     let sliderRefs = document.querySelector('.carousel-list');
-
     initImage();
     initArrows();
     initRefs();
@@ -57,7 +55,7 @@ function initSlider(options) {
     }
 
     function initArrows() {
-        sliderArrows.forEach(function(arrow){
+        document.querySelectorAll('.carousel-control__arrow, .carousel-control__mob-arrow').forEach(function(arrow){
             arrow.addEventListener('click', function() {
                 let currentNum = +sliderImage.querySelector('.active').dataset.index;
                 let nextNum;
